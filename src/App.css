@@ -1,32 +1,75 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #262a44;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: white;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.primaryDark {
+  background: #262a44;
+}
+.primaryBright {
+  background: #cdcbca;
+}
+.accent {
+  background: #50fa7b;
+}
+.secondary {
+  background: #1ebcf3;
+}
+.lightText {
+  color: #cdcbca;
+}
+.darkText {
+  color: #21252b;
+}
+.brightLink {
+  color: #1ebcf3;
+  text-decoration: underline;
+  font-weight: 800;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-family: -apple-system, "Roboto Mono", BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+.darkLink {
+  color: #21252b;
+  text-decoration: underline;
+  font-weight: 800;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-family: -apple-system, "Roboto Mono", BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+.bold {
+  font-weight: 800;
+}
+.serif {
+  font-family: "Lora", serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.safe {
+  width: 95%;
+  height: 100%;
+  max-width: 1440px;
+  padding: 10px;
+  /* border: 1px solid #1ebcf3; */
+}
+
+@media (max-width: 1024px) {
+  .App {
+    overflow: hidden;
   }
 }
