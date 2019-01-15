@@ -30,27 +30,28 @@ const MainTitle = () => (
 const Abstract = () => (
   <section className="primaryBright abstractContainer">
     <ul className="abstractList">
-      <li>I’m a Fullstack developer with an eye for design</li>
       <li>
-        I’m passionate about software, design, animation, music and travel.
+        I’m a Frontend developer passionate for the intersection of desing and
+        engineering
       </li>
       <li>
-        I have a holistic mindset and enjoy working with energetic teams on
-        great products.
+        I'd describe myself as a creative technologist. My background in digital
+        arts and and a extensive experience in software development (Web and
+        Mobile) allow me to have a holistic approach to develop digital
+        products.
       </li>
-      <li>I was born in Mexico City; currently living in Wilmington, NC.</li>
       <li>
-        My mantra. <span className="bold">learn, create and have fun.</span>
+        My mantra: <span className="bold">learn, create and have fun.</span>
       </li>
     </ul>
-    <button
+    {/* <button
       className="darkLink"
       onClick={() => {
         alert("In Progress... Will be ready next sprint 🙏");
       }}
     >
       More +
-    </button>
+    </button> */}
     <p className="closingMessage lightText">
       Feel free to reach out by Twitter or linkedIn.
     </p>

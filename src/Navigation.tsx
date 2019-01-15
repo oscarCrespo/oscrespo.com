@@ -5,9 +5,13 @@ export default class Navigation extends PureComponent {
     return (
       <nav>
         <ul className="navigationList">
-          <li>
+          {/* <li
+            onClick={() => {
+              alert("In Progress... Will be ready next sprint 🙏");
+            }}
+          >
             <a className="brightLink">Projects</a>
-          </li>
+          </li> */}
           <li>
             <a
               className="brightLink"
