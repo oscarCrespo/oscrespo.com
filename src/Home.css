@@ -39,10 +39,10 @@
 }
 
 h2.borderBottom {
-  border-bottom: 1px solid #50fa7b;
+  border-bottom: 1px solid var(--accent);
 }
 h2.borderTop {
-  border-top: 1px solid #50fa7b;
+  border-top: 1px solid var(--accent);
 }
 
 .abstractContainer {

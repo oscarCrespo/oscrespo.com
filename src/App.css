@@ -1,36 +1,31 @@
-.App {
-  text-align: center;
-  background-color: #262a44;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(5px + 2vmin);
-  color: white;
-  box-sizing: border-box;
+:root {
+  --primaryDark: #101011;
+  --primaryBright: #dddbcb;
+  --accent: #5dfdcb;
+  --secondary: #fca311;
+  --lightText: #f4f3ed;
+  --darkText: #373737;
 }
-
 .primaryDark {
-  background: #262a44;
+  background: var(--primaryDark);
 }
 .primaryBright {
-  background: #cdcbca;
+  background: var(--primaryBright);
 }
 .accent {
-  background: #50fa7b;
+  background: var(--accent);
 }
 .secondary {
-  background: #1ebcf3;
+  background: var(--secondary);
 }
 .lightText {
-  color: #cdcbca;
+  color: var(--lightText);
 }
 .darkText {
-  color: #21252b;
+  color: var(--darkText);
 }
 .brightLink {
-  color: #1ebcf3;
+  color: var(--secondary);
   text-decoration: underline;
   font-weight: 800;
   border: none;
@@ -42,7 +37,7 @@
     "Helvetica Neue", sans-serif;
 }
 .darkLink {
-  color: #21252b;
+  color: var(--darkText);
   text-decoration: underline;
   font-weight: 800;
   border: none;
@@ -66,6 +61,19 @@
   max-width: 1440px;
   padding: 10px;
   /* border: 1px solid #1ebcf3; */
+}
+
+.App {
+  text-align: center;
+  background-color: var(--primaryDark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
