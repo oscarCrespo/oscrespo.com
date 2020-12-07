@@ -37,7 +37,7 @@ const Abstract = () => (
         My career started back when Jquery was modern, and producing a website was as simple as creating an index.html. Today I work with Typescript, React and (React Native), Redux, Jest, AWS, and other modern technology stacks.
       </li>
       <li>
-       I enjoy working on autonomous, collaborative, and high-performance environments. Constant learner. My tagline: There must be a better way.
+       I enjoy working in autonomous, collaborative, and high-performance environments. Constant learner. My tagline: There must be a better way.
       </li>
     </ul>
     <p className="closingMessage lightText">
