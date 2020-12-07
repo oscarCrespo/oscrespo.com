@@ -31,27 +31,15 @@ const Abstract = () => (
   <section className="primaryBright abstractContainer">
     <ul className="abstractList">
       <li>
-        I’m a Frontend developer passionate for the intersection of desing and
-        engineering
+       I am a software engineer specialized in front-end development. My Design background and experience in software development allow me to have a holistic view of development.
       </li>
       <li>
-        I'd describe myself as a creative technologist. My background in digital
-        arts and and a extensive experience in software development (Web and
-        Mobile) allow me to have a holistic approach to develop digital
-        products.
+        My career started back when Jquery was modern, and producing a website was as simple as creating an index.html. Today I work with Typescript, React and (React Native), Redux, Jest, AWS, and other modern technology stacks.
       </li>
       <li>
-        My mantra: <span className="bold">learn, create and have fun.</span>
+       I enjoy working on autonomous, collaborative, and high-performance environments. Constant learner. My tagline: There must be a better way.
       </li>
     </ul>
-    {/* <button
-      className="darkLink"
-      onClick={() => {
-        alert("In Progress... Will be ready next sprint 🙏");
-      }}
-    >
-      More +
-    </button> */}
     <p className="closingMessage lightText">
       Feel free to reach out by Twitter or linkedIn.
     </p>
