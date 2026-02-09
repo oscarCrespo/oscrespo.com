@@ -1,0 +1,135 @@
+.homeContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.navigationContainer {
+  padding: 0 0 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.mainTitleSection {
+  box-sizing: border-box;
+  text-align: left;
+}
+.mainTitleSection h2 {
+  font-size: 36px;
+  font-weight: 100;
+  padding: 20px;
+}
+.mainTitleSection h1 {
+  font-size: 144px;
+  line-height: 130px;
+  font-weight: 400;
+  font-family: var(--font-lora, "Lora"), serif;
+  margin: 0;
+  padding: 0 20px 40px;
+}
+.mainTitleSection h1 span {
+  display: block;
+}
+
+h2.borderBottom {
+  border-bottom: 1px solid var(--accent);
+}
+h2.borderTop {
+  border-top: 1px solid var(--accent);
+}
+
+.abstractContainer {
+  border: 2px solid #393939;
+  box-sizing: border-box;
+  box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.42);
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  max-width: 600px;
+  color: #21252b;
+  text-align: left;
+  position: relative;
+  font-size: 18px;
+  height: 100%;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.abstractContainer .darkLink {
+  float: right;
+}
+.abstractList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+.abstractList li {
+  margin: 15px 0;
+}
+.closingMessage {
+  position: absolute;
+  bottom: -80px;
+  font-weight: 100;
+  width: 350px;
+  text-align: right;
+  right: 0;
+  margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  .homeContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navigationContainer {
+    padding: 0 0 20px;
+    position: relative;
+    text-align: right;
+    margin-top: 40px;
+  }
+  .navigationContainer .navigationList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navigationContainer .navigationList li {
+    margin: 10px;
+  }
+  .abstractContainer {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .mainTitleSection {
+    width: 100%;
+  }
+  .mainTitleSection h1 {
+    font-size: 80px;
+    line-height: 71px;
+    padding: 0 5px 22px;
+  }
+  .mainTitleSection h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .closingMessage {
+    width: 310px;
+    margin-right: 8px;
+    bottom: -70px;
+  }
+}
