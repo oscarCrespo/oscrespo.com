@@ -4,11 +4,10 @@ import "./page.css";
 function MainTitle() {
   return (
     <header className="mainTitleSection lightText">
-      <h2 className="borderBottom">Hi, my name is</h2>
-      <h1>
+      <h1 className="bordered">
         Oscar <span>Crespo</span>
       </h1>
-      <h2 className="borderTop">I build things</h2>
+      <h2>Product engineer with taste</h2>
     </header>
   );
 }
@@ -18,25 +17,12 @@ function Abstract() {
     <section className="primaryBright abstractContainer">
       <ul className="abstractList">
         <li>
-          I am a software engineer specialized in front-end development. My
-          Design background and experience in software development allow me to
-          have a holistic view of development.
+          I build consumer-facing web and mobile products that are as functional as they are beautiful, comfortably switching between high-level design and low-level implementation
         </li>
         <li>
-          My career started back when Jquery was modern, and producing a website
-          was as simple as creating an index.html. Today I work with Typescript,
-          React and (React Native), Redux, Jest, AWS, and other modern technology
-          stacks.
-        </li>
-        <li>
-          I enjoy working in autonomous, collaborative, and high-performance
-          environments. Constant learner. My tagline: There must be a better
-          way.
+          Thrive in collaborative, high-autonomy environments where I own problems from conception to deployment.
         </li>
       </ul>
-      <p className="closingMessage lightText">
-        Feel free to reach out by Twitter or linkedIn.
-      </p>
     </section>
   );
 }
