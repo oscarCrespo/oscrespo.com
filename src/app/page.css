@@ -159,6 +159,7 @@ h1.bordered {
   .mainTitleSection h2 {
     font-size: 18px;
     padding: 10px;
+    margin: 0px;
   }
 
   .closingMessage {
