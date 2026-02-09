@@ -17,7 +17,7 @@ function Abstract() {
     <section className="primaryBright abstractContainer">
       <ul className="abstractList">
         <li>
-          I build consumer-facing web and mobile products that are as functional as they are beautiful, comfortably switching between high-level design and low-level implementation
+          I build consumer-facing web and mobile products that are as functional as they are beautiful, comfortably switching between high-level design and low-level implementation.
         </li>
         <li>
           Thrive in collaborative, high-autonomy environments where I own problems from conception to deployment.
