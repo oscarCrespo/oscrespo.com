@@ -16,9 +16,41 @@ const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
 });
 
+const baseUrl = "https://oscrespo.com";
+
 export const metadata: Metadata = {
-  title: "Os Crespo",
-  description: "Oscar Crespo personal website",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Oscar Crespo | Product Engineer",
+    template: "%s | Oscar Crespo",
+  },
+  description: "Oscar Crespo is a product engineer with a focus on building beautiful and functional web and mobile products.",
+  keywords: ["Oscar Crespo", "Product Engineer", "Software Engineer", "Mobile Development", "Web Development", "Product Design"],
+  authors: [{ name: "Oscar Crespo", url: baseUrl }],
+  creator: "Oscar Crespo",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: baseUrl,
+    siteName: "Oscar Crespo",
+    title: "Oscar Crespo | Product Engineer",
+    description: "Product engineer with taste. Building functional and beautiful products.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Oscar Crespo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Oscar Crespo | Product Engineer",
+    description: "Product engineer with taste. Building functional and beautiful products.",
+    images: ["/og-image.png"],
+    creator: "@OsCrsspo",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -28,7 +60,19 @@ export const metadata: Metadata = {
     apple: { url: "/favicon.png", sizes: "192x192" },
   },
   manifest: "/manifest.json",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -49,6 +93,25 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-1910VM3S2Y');
+          `}
+        </Script>
+        <Script
+          id={'person-schema'}
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Oscar Crespo",
+              "url": "https://oscrespo.com",
+              "jobTitle": "Product Engineer",
+              "description": "Product engineer with taste. Building functional and beautiful products.",
+              "sameAs": [
+                "https://www.linkedin.com/in/oscarcrespoc/",
+              ],
+            }
           `}
         </Script>
       </head>
