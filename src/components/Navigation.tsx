@@ -17,11 +17,11 @@ export default function Navigation() {
         <li>
           <a
             className="brightLink"
-            href="https://twitter.com/OsCrsspo"
+            href="https://x.com/OsCrsspo"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Twitter
+            X
           </a>
         </li>
         <li>
@@ -31,10 +31,10 @@ export default function Navigation() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            Linkedin
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             className="brightLink"
             href="https://www.behance.net/puntoyguion"
@@ -43,7 +43,7 @@ export default function Navigation() {
           >
             Behance
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
