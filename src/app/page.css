@@ -54,7 +54,7 @@ h1.bordered {
 .abstractContainer {
   box-sizing: border-box;
   width: 45%;
-  max-width: 600px;
+  max-width: 650px;
   text-align: left;
   position: relative;
   font-size: 18px;
@@ -84,8 +84,58 @@ h1.bordered {
   line-height: 1.2;
   color: #828282;
   font-family: var(--font-lora, "Lora"), serif;
+  min-width: 450px;
   width: 70%;
 }
+
+.abstractTitle .bright-emphasis {
+  color: #6d6d6d;
+  /* Starts off */
+  text-shadow: none;
+  /* Turns on after 1.2s (after fade up), then flickers infinitely */
+  animation: neonTurnOn 0.4s ease-in-out forwards 1.2s,
+    neonFlicker 6s infinite 1.6s;
+}
+
+@keyframes neonTurnOn {
+
+  0%,
+  40% {
+    color: #828282;
+    text-shadow: none;
+  }
+
+  20%,
+  60%,
+  100% {
+    color: var(--lightText);
+    text-shadow: 0 0 12px rgba(244, 243, 237, 0.4);
+  }
+}
+
+@keyframes neonFlicker {
+
+  0%,
+  94%,
+  96%,
+  98%,
+  100% {
+    color: var(--lightText);
+    text-shadow: 0 0 12px rgba(244, 243, 237, 0.4);
+  }
+
+  95% {
+    color: #828282;
+    text-shadow: none;
+  }
+
+  97% {
+    color: #a0a0a0;
+    text-shadow: 0 0 4px rgba(244, 243, 237, 0.2);
+  }
+}
+
+
 
 .abstractSubtitle {
   font-size: 18px;
@@ -185,6 +235,7 @@ h1.bordered {
   .abstractTitle {
     font-size: 25px;
     width: 100%;
+    min-width: 0px;
   }
 
   .abstractSubtitle {
@@ -197,4 +248,31 @@ h1.bordered {
     grid-template-rows: 0 auto 1fr;
   }
 
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-load {
+  opacity: 0;
+  animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: calc(var(--animation-order) * 0.15s + 0.1s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-load {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }

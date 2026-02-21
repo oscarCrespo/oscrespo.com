@@ -2,7 +2,7 @@ import "./Navigation.css";
 
 export default function Navigation() {
   return (
-    <nav>
+    <nav className="animate-on-load" style={{ '--animation-order': 5 } as React.CSSProperties}>
       <ul className="navigationList">
         <li>
           <a
