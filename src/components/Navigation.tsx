@@ -7,6 +7,16 @@ export default function Navigation() {
         <li>
           <a
             className="brightLink"
+            href="https://www.linkedin.com/in/oscarcrespoc/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a
+            className="brightLink"
             href="https://github.com/oscarCrespo"
             target="_blank"
             rel="noopener noreferrer"
@@ -24,16 +34,7 @@ export default function Navigation() {
             X
           </a>
         </li>
-        <li>
-          <a
-            className="brightLink"
-            href="https://www.linkedin.com/in/oscarcrespoc/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Linkedin
-          </a>
-        </li>
+
         {/* <li>
           <a
             className="brightLink"

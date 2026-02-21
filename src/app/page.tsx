@@ -7,22 +7,22 @@ function MainTitle() {
       <h1 className="bordered">
         Oscar <span>Crespo</span>
       </h1>
-      <h2>Product engineer with taste</h2>
+      <h2>Staff Software Engineer</h2>
     </header>
   );
 }
 
 function Abstract() {
   return (
-    <section className="primaryBright abstractContainer">
-      <ul className="abstractList">
-        <li>
-          I build consumer-facing web and mobile products that are as functional as they are beautiful, comfortably switching between high-level design and low-level implementation.
-        </li>
-        <li>
-          Thrive in collaborative, high-autonomy environments where I own problems from conception to deployment.
-        </li>
-      </ul>
+    <section className="abstractContainer lightText">
+      <div className="abstractContent">
+        <h3 className="abstractTitle">
+          Building beautiful apps and the robust systems behind them.
+        </h3>
+        <p className="abstractSubtitle">
+          Over the last decade, I've helped startups across multiple industries turn ambitious product visions into delightful, consumer-facing experiences.
+        </p>
+      </div>
     </section>
   );
 }
