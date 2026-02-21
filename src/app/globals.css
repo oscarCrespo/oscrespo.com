@@ -97,6 +97,7 @@ code {
   text-align: center;
   background-color: var(--primaryDark);
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,6 +109,6 @@ code {
 
 @media (max-width: 1024px) {
   .App {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }

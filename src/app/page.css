@@ -1,7 +1,8 @@
 .homeContainer {
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  flex-grow: 1;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 .columns {
@@ -166,7 +167,7 @@ h1.bordered {
 
   .homeContainer {
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 40px auto 1fr;
   }
 
   .columns {
@@ -182,7 +183,7 @@ h1.bordered {
     grid-row: 3;
     align-self: end;
     justify-self: center;
-    padding: 0 0 20px;
+    padding: 20px 0 40px;
     text-align: right;
   }
 
@@ -243,11 +244,15 @@ h1.bordered {
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .homeContainer {
-    grid-template-rows: 0 auto 1fr;
+    grid-template-rows: 10px auto 1fr;
   }
 
+  .mainTitleSection h1 {
+    font-size: 60px;
+    line-height: 55px;
+  }
 }
 
 /* Animations */
