@@ -20,7 +20,7 @@ function Abstract() {
           Building <span className="bright-emphasis">beautiful apps</span> and the <span className="bright-emphasis">robust systems</span> behind them.
         </h3>
         <p className="abstractSubtitle animate-on-load" style={{ '--animation-order': 4 } as React.CSSProperties}>
-          Over the last decade, I've helped startups across multiple industries turn ambitious product visions into delightful, consumer-facing experiences.
+          Over the last decade, I've helped startups across multiple industries turn ambitious product visions into seamless, consumer-facing experiences.
         </p>
       </div>
     </section>
