@@ -246,7 +246,7 @@ h1.bordered {
 
 @media (max-height: 750px) {
   .homeContainer {
-    grid-template-rows: 10px auto 1fr;
+    grid-template-rows: 0 auto 1fr;
   }
 
   .mainTitleSection h1 {
