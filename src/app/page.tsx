@@ -7,7 +7,6 @@ function MainTitle() {
       <h1 className="bordered animate-on-load" style={{ '--animation-order': 1 } as React.CSSProperties}>
         Oscar <span>Crespo</span>
       </h1>
-      <h2 className="animate-on-load" style={{ '--animation-order': 2 } as React.CSSProperties}>Staff Software Engineer</h2>
     </header>
   );
 }
